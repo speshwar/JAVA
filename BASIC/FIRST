@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter a integer value: ");
+		int n = scan.nextInt();
+		
+		scan.nextLine();
+		
+		System.out.println("Enter a Character value: ");
+		char c = scan.nextLine().charAt(0);
+		
+		System.out.println("Enter a boolean value: ");
+		Boolean b = scan.nextBoolean();
+		
+		scan.nextLine();
+		
+		System.out.println("Integer value is "+n+" Character Value is "+c+" Boolean value is "+b);
+		
+		System.out.println("Enter a letter or word to built a pyramid");
+		char pyramid = scan.nextLine().charAt(0);
+		
+    	System.out.println("   " + pyramid + "   ");
+        System.out.println("  " + pyramid + " " + pyramid + " ");
+        System.out.println(pyramid + " " + pyramid + " " + pyramid + " " + pyramid);
+	}
+}
